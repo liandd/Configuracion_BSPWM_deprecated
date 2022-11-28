@@ -6,13 +6,13 @@ La guia de instalacion sera la siguiente:
 
 1. Instalamos los siguientes paquetes:
 
-apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-rand>
+   apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-rand>
 
 2. Instalamos bspwm y sxhkd:
 
-cd /home/{usuario}/Descargas/
-git clone https://github.com/baskerville/bspwm.git
-git clone https://github.com/baskerville/sxhkd.git
+   cd /home/{usuario}/Descargas/
+   git clone https://github.com/baskerville/bspwm.git
+   git clone https://github.com/baskerville/sxhkd.git
 cd bspwm/
 make
 sudo make install
@@ -32,7 +32,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 cp examples/sxhkdrc ~/.config/sxhkd/
 
 4. Abrimos el sxhkdrc y configuramos el tipo de terminal así como algunos shortcuts
-# ----------------------------------------------------------------------------------
+
 #
 # wm independent hotkeys
 #
@@ -159,7 +159,7 @@ super + ctrl + {Left,Down,Up,Right}
 # Custom move/resize
 alt + super + {Left,Down,Up,Right}
         /home/{usuario}/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
-# ----------------------------------------------------------------------------------
+
 
 5. Creamos el archivo bspwm_resize:
 
@@ -169,7 +169,7 @@ chmod +x ~/.config/bspwm/scripts/bspwm_resize
 
 Mediante la siguiente configuración podremos en el futuro controlar las dimensiones y
 modificarlas con atajos de teclado:
-# ---------------------------------------------------------------------------------->
+>
 #!/usr/bin/env dash
 
 if bspc query -N -n focused.floating > /dev/null; then
@@ -186,7 +186,7 @@ case "$1" in
 esac
 
 bspc node -z "$dir" "$x" "$y" || bspc node -z "$falldir" "$x" "$y"
-# ---------------------------------------------------------------------------------->
+
 
 6. Instalamos Polybar. Pero antes, instalamos primero los siguientes paquetes
 
@@ -216,12 +216,11 @@ libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-glx0-dev
 
 Posteriormente, ejecutamos los siguientes comandos bajo el directorio ~/Descargas:
 
-#-------------------------------------------------------------------------------------------------
 EN KALI, EJECUTAR UNO A UNO LOS -DEV O LA INSTALACION DE PICOM CON MESON NO FUNCIONARA, DARA ERROR
 INFORMANDO QUE FALTAN DEPENDENCIAS. Y MESON USARLO COMO:
 meson setup --buildtype=release . build
 SI NO, SERA DEPRECATED Y NO SERVIRA
-#-------------------------------------------------------------------------------------------------
+
 
 git clone https://github.com/ibhagwan/picom.git
 cd picom/
