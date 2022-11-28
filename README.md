@@ -158,7 +158,7 @@ La guia de instalacion sera la siguiente:
    -
 
    - expand a window by moving one of its side outward
-   -super + alt + {h,j,k,l}
+   -       super + alt + {h,j,k,l}
    -       bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
    - contract a window by moving one of its side inward
