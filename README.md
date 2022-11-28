@@ -12,9 +12,9 @@ La guia de instalacion sera la siguiente:
 
    cd /home/{usuario}/Descargas/
    
-   git clone https://github.com/baskerville/bspwm.git
+   -     git clone https://github.com/baskerville/bspwm.git
    
-   git clone https://github.com/baskerville/sxhkd.git
+   -     git clone https://github.com/baskerville/sxhkd.git
    
    cd bspwm/
    
