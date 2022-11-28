@@ -33,130 +33,130 @@ La guia de instalacion sera la siguiente:
 
 4. Abrimos el sxhkdrc y configuramos el tipo de terminal así como algunos shortcuts
 
-   #
-   # wm independent hotkeys
-   #
+   -
+   -wm independent hotkeys
+   -
 
-   # terminal emulator
+   - terminal emulator
    super + Return
            gnome-terminal
 
-   # program launcher
+   - program launcher
    super + d
            rofi -show run
 
-   # make sxhkd reload its configuration files:
+   - make sxhkd reload its configuration files:
    super + Escape
            pkill -USR1 -x sxhkd
 
-   #
-   # bspwm hotkeys
-   #
+   -
+   - bspwm hotkeys
+   -
 
-   # quit/restart bspwm
+   - quit/restart bspwm
    super + alt + {q,r}
            bspc {quit,wm -r}
 
-   # close and kill
+   - close and kill
    super + {_,shift + }w
            bspc node -{c,k}
 
-   # alternate between the tiled and monocle layout
+   - alternate between the tiled and monocle layout
    super + m
            bspc desktop -l next
 
-   # send the newest marked node to the newest preselected node
+   - send the newest marked node to the newest preselected node
    super + y
            bspc node newest.marked.local -n newest.!automatic.local
 
-   # swap the current node and the biggest node
+   - swap the current node and the biggest node
    super + g
            bspc node -s biggest
 
-   # 
-   # state/flags
-   #
+   - 
+   - state/flags
+   -
 
-   # set the window state
+   - set the window state
    super + {t,shift + t,s,f}
            bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-   # set the node flags
+   - set the node flags
    super + ctrl + {m,x,y,z}
            bspc node -g {marked,locked,sticky,private}
 
-   #
-   # focus/swap
-   #
+   -
+   - focus/swap
+   -
 
    super + {_,shift + }{Left,Down,Up,Right}
            bspc node -{f,s} {west,south,north,east}
 
 
-   # focus the node for the given path jump
+   - focus the node for the given path jump
    super + {p,b,comma,period}
            bspc node -f @{parent,brother,first,second}
 
-   # focus the next/previous node in the current desktop
+   - focus the next/previous node in the current desktop
    super + {_,shift + }c
            bspc node -f {next,prev}.local
 
-   # focus the next/previous desktop in the current monitor
+   - focus the next/previous desktop in the current monitor
    super + bracket{left,right}
            bspc desktop -f {prev,next}.local
 
-   # focus the last node/desktop
+   - focus the last node/desktop
    super + {grave,Tab}
            bspc {node,desktop} -f last
 
-   # focus the older or newer node in the focus history
+   - focus the older or newer node in the focus history
    super + {o,i}
            bspc wm -h off; \
            bspc node {older,newer} -f; \
            bspc wm -h on
 
-   # focus or send to the given desktop
+   - focus or send to the given desktop
    super + {_,shift + }{1-9,0}
            bspc {desktop -f,node -d} '^{1-9,10}'
 
-   #
-   # preselect
-   #
+   -
+   - preselect
+   -
 
-   # preselect the direction
+   - preselect the direction
    super + ctrl + alt + {Left,Down,Up,Right}
            bspc node -p {west,south,north,east}
 
 
-   # preselect the ratio
+   - preselect the ratio
    super + ctrl + {1-9}
            bspc node -o 0.{1-9}
 
-   # cancel the preselection for the focused node
+   - cancel the preselection for the focused node
    super + ctrl + space
            bspc node -p cancel
 
-   # cancel the preselection for the focused desktop
+   - cancel the preselection for the focused desktop
    super + ctrl + alt + space
            bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-   #
-   # move/resize
-   #
+   -
+   - move/resize
+   -
 
-   # expand a window by moving one of its side outward
-   #super + alt + {h,j,k,l}
-   #       bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+   - expand a window by moving one of its side outward
+   -super + alt + {h,j,k,l}
+   -       bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-   # contract a window by moving one of its side inward
-   #super + alt + shift + {h,j,k,l}
-   #       bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+   - contract a window by moving one of its side inward
+   -super + alt + shift + {h,j,k,l}
+   -       bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
-   # move a floating window
+   - move a floating window
    super + ctrl + {Left,Down,Up,Right}
            bspc node -v {-20 0,0 20,0 -20,20 0}
 
-   # Custom move/resize
+   - Custom move/resize
    alt + super + {Left,Down,Up,Right}
            /home/{usuario}/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
 
@@ -343,7 +343,7 @@ La guia de instalacion sera la siguiente:
 
    Comentamos la siguiente línea:
 
-   # POWERLEVEL9K_CONTEXT_PREFIX='%246Fwith '
+   - POWERLEVEL9K_CONTEXT_PREFIX='%246Fwith '
 
    Para evitar un pequeño problema de permisos a la hora de desde el usuario root migrar con 'su' al usuario con bajos privilegios,
    ejecutamos los siguientes comandos:
@@ -359,7 +359,7 @@ La guia de instalacion sera la siguiente:
    Incorporamos posteriormente las siguientes líneas al final del zshrc para que
    al salir de vim el cursor recupere su aspecto de linea.
 
-   # Change cursor shape for different vi modes.
+   - Change cursor shape for different vi modes.
    function zle-keymap-select {
      if [[ $KEYMAP == vicmd ]] || [[ $1 = 'block' ]]; then
        echo -ne '\e[1 q'
@@ -369,7 +369,7 @@ La guia de instalacion sera la siguiente:
    }
    zle -N zle-keymap-select
 
-   # Start with beam shape cursor on zsh startup and after every command.
+   - Start with beam shape cursor on zsh startup and after every command.
    zle-line-init() { zle-keymap-select 'beam'}
 
 27. Whichsystem.py
