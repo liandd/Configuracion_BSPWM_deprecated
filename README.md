@@ -32,7 +32,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 cp examples/sxhkdrc ~/.config/sxhkd/
 
 4. Abrimos el sxhkdrc y configuramos el tipo de terminal así como algunos shortcuts
-# ---------------------------------------------------------------------------------->
+# ----------------------------------------------------------------------------------
 #
 # wm independent hotkeys
 #
@@ -159,7 +159,7 @@ super + ctrl + {Left,Down,Up,Right}
 # Custom move/resize
 alt + super + {Left,Down,Up,Right}
         /home/{usuario}/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
-# ---------------------------------------------------------------------------------->
+# ----------------------------------------------------------------------------------
 
 5. Creamos el archivo bspwm_resize:
 
