@@ -1,12 +1,14 @@
 # .dotfiles
 Configuracion personal de entorno de trabajo bspwm.
+
 Este entorno de trabajo solo sera de utilidad en una maquina Gnu/Linux con una distro basada en Debian,
 y esta centrada al uso de pentesting.
+
 La guia de instalacion sera la siguiente:
 
 1. Instalamos los siguientes paquetes:
 
-   apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-rand>
+   -     apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-rand>
 
 2. Instalamos bspwm y sxhkd:
 
@@ -16,33 +18,33 @@ La guia de instalacion sera la siguiente:
    
    -     git clone https://github.com/baskerville/sxhkd.git
    
-   cd bspwm/
+   -     cd bspwm/
    
-   make
+   -     make
    
-   sudo make install
+   -     sudo make install
    
-   cd ../sxhkd/
+   -     cd ../sxhkd/
    
-   make
+   -     make
    
-   sudo make install
+   -     sudo make install
 
-   sudo apt install bspwm
+   -     sudo apt install bspwm
 
 3. Cargamos en bspwm y sxhkd ficheros de ejemplo:
 
-   mkdir ~/.config/bspwm
+   -     mkdir ~/.config/bspwm
    
-   mkdir ~/.config/sxhkd
+   -     mkdir ~/.config/sxhkd
    
-   cd /home/{usuario}/Descargas/bspwm/
+   -     cd /home/{usuario}/Descargas/bspwm/
    
-   cp examples/bspwmrc ~/.config/bspwm/
+   -     cp examples/bspwmrc ~/.config/bspwm/
    
-   chmod +x ~/.config/bspwm/bspwmrc
+   -     chmod +x ~/.config/bspwm/bspwmrc
    
-   cp examples/sxhkdrc ~/.config/sxhkd/
+   -     cp examples/sxhkdrc ~/.config/sxhkd/
 
 4. Abrimos el sxhkdrc y configuramos el tipo de terminal así como algunos shortcuts
 
