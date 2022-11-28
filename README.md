@@ -12,7 +12,7 @@ La guia de instalacion sera la siguiente:
 
 2. Instalamos bspwm y sxhkd:
 
-   cd /home/{usuario}/Descargas/
+   -     cd /home/{usuario}/Descargas/
    
    -     git clone https://github.com/baskerville/bspwm.git
    
@@ -48,9 +48,9 @@ La guia de instalacion sera la siguiente:
 
 4. Abrimos el sxhkdrc y configuramos el tipo de terminal así como algunos shortcuts
 
-   -
-   -wm independent hotkeys
-   -
+   
+   @wm independent hotkeys
+   
 
    - terminal emulator
    super + Return
