@@ -28,15 +28,20 @@ La guia de instalacion sera la siguiente:
    
    sudo make install
 
-   -sudo apt install bspwm
+   sudo apt install bspwm
 
 3. Cargamos en bspwm y sxhkd ficheros de ejemplo:
 
    mkdir ~/.config/bspwm
+   
    mkdir ~/.config/sxhkd
+   
    cd /home/{usuario}/Descargas/bspwm/
+   
    cp examples/bspwmrc ~/.config/bspwm/
+   
    chmod +x ~/.config/bspwm/bspwmrc
+   
    cp examples/sxhkdrc ~/.config/sxhkd/
 
 4. Abrimos el sxhkdrc y configuramos el tipo de terminal así como algunos shortcuts
