@@ -1,6 +1,8 @@
 # .dotfiles
 Configuracion personal de entorno de trabajo bspwm.
 
+Todos los creditos a sus respectivos desarrolladores.
+
 Este entorno de trabajo solo sera de utilidad en una maquina Gnu/Linux con una distro basada en Debian,
 y esta centrada al uso de pentesting.
 
