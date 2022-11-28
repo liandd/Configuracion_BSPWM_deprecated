@@ -10,17 +10,17 @@ La guia de instalacion sera la siguiente:
 
 2. Instalamos bspwm y sxhkd:
 
-   cd /home/{usuario}/Descargas/
-   git clone https://github.com/baskerville/bspwm.git
-   git clone https://github.com/baskerville/sxhkd.git
-   cd bspwm/
-   make
-   sudo make install
-   cd ../sxhkd/
-   make
-   sudo make install
+   -cd /home/{usuario}/Descargas/
+   -git clone https://github.com/baskerville/bspwm.git
+   -git clone https://github.com/baskerville/sxhkd.git
+   -cd bspwm/
+   -make
+   -sudo make install
+   -cd ../sxhkd/
+   -make
+   -sudo make install
 
-   sudo apt install bspwm
+   -sudo apt install bspwm
 
 3. Cargamos en bspwm y sxhkd ficheros de ejemplo:
 
