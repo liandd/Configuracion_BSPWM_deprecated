@@ -121,8 +121,6 @@ La guia de instalacion sera la siguiente:
     focus or send to the given desktop
    -     super + {_,shift + }{1-9,0}
                 bspc {desktop -f,node -d} '^{1-9,10}'
-
-    preselect
    
     preselect the direction
    -     super + ctrl + alt + {Left,Down,Up,Right}
@@ -139,8 +137,6 @@ La guia de instalacion sera la siguiente:
     cancel the preselection for the focused desktop
    -     super + ctrl + alt + space
                 bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-  
-    move/resize
    
     expand a window by moving one of its side outward
    -     super + alt + {h,j,k,l}
