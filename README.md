@@ -52,7 +52,7 @@ La guia de instalacion sera la siguiente:
 
     terminal emulator
    -     super + Return
-               gnome-terminal
+               kitty
 
     program launcher
    -     super + d
@@ -61,8 +61,6 @@ La guia de instalacion sera la siguiente:
     make sxhkd reload its configuration files:
    -     super + Escape
                 pkill -USR1 -x sxhkd
-
-    bspwm hotkeys
 
     quit/restart bspwm
    -     super + alt + {q,r}
@@ -83,8 +81,6 @@ La guia de instalacion sera la siguiente:
     swap the current node and the biggest node
    -     super + g
                 bspc node -s biggest
-
-    state/flags
    
     set the window state
    -     super + {t,shift + t,s,f}
