@@ -209,15 +209,14 @@ La guia de instalacion sera la siguiente:
    Posteriormente, ejecutamos los siguientes comandos bajo el directorio ~/Descargas:
 
 7.1 EN KALI, EJECUTAR UNO A UNO LOS -DEV O LA INSTALACION DE PICOM CON MESON NO FUNCIONARA, DARA ERROR
-    INFORMANDO QUE FALTAN DEPENDENCIAS. Y MESON USARLO COMO:
-   -     meson setup --buildtype=release . build
+    INFORMANDO QUE FALTAN DEPENDENCIAS.
     SI NO, SERA DEPRECATED Y NO SERVIRA
-
 
    -     git clone https://github.com/ibhagwan/picom.git
    -     cd picom/
    -     git submodule update --init --recursive
-   -     meson --buildtype=release . build
+   -     meson --buildtype=release . build(DEPRECATED DO NOT USE)
+   -     meson setup --buildtype=release . build
    -     ninja -C build
    -     sudo ninja -C build install
 
