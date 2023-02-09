@@ -364,11 +364,11 @@ La guia de instalacion sera la siguiente:
    Start with beam shape cursor on zsh startup and after every command.
    -      zle-line-init() { zle-keymap-select 'beam'}
 
-27. Whichsystem.py, es un pequeno script que se ha hecho un companero de la comunidad Hack4u.
+27. Whichsystem.py, es un pequeno script que se ha hecho S4avitar en la maquina Blue de HackTheBox, todos los creditos de la creacion y por su tutorial para montar el     entorno de linux.
 
    -     https://github.com/Akronox/WichSystem.py
 
-28. fastTCPScan.go, es la herramienta creada por S4vitar, todos los creditos de esta herramienta para el.
+28. fastTCPScan.go, es la herramienta creada por S4avitar, todos los creditos de esta herramienta para el.
     Con fastTCPScan podremos hacer descubrimiento de puertos TCP.
     
 Todos los creditos para los desarrolladores.
