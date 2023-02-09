@@ -254,7 +254,7 @@ La guia de instalacion sera la siguiente:
    -     sudo cp * /usr/share/fonts/truetype/
    -     fc-cache -v
 
-   Hacemos Windows + Shift + R para cargar la configuración y deberíamos ver la Polybar por arriba.
+15.1 Hacemos Windows + Shift + R para cargar la configuración y deberíamos ver la Polybar por arriba.
 
 16. Para configurar Picom y ajustar las transparencias además de bordeados de ventana, ejecutamos los siguientes pasos:
 
