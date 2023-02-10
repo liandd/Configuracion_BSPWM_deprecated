@@ -325,9 +325,9 @@ function dusb(){
 }
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-function setTarget(){
+function starget(){
 	echo $1 > /home/lina/.config/polybar/scripts/.target.tmp
 }
-function clearTarget(){
+function ctarget(){
 	echo '' > /home/lina/.config/polybar/scripts/.target.tmp
 }
