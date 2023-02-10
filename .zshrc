@@ -329,5 +329,5 @@ function setTarget(){
 	echo $1 > /home/lina/.config/polybar/scripts/.target.tmp
 }
 function clearTarget(){
-	echo '' > /home/ydpak/.config/polybar/scripts/.target.tmp
+	echo '' > /home/lina/.config/polybar/scripts/.target.tmp
 }
