@@ -97,7 +97,7 @@ super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + alt + space
+super + ctrl + space
 	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
@@ -122,9 +122,12 @@ super + ctrl + {Left,Down,Up,Right}
 # Customs
 alt + super + {Left,Down,Up,Right}
 	/home/ydpak/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
-# Firefox
-super + shift + f
-	firejail /opt/firefox/firefox
+# librewolf
+shift + l
+	firejail /usr/bin/librewolf
 # Lightdm
 super + shift + x
 	dm-tool lock 
+#Burpsuite
+shift + b
+	/usr/bin/burpsuite
