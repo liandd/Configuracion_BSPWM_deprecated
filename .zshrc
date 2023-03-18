@@ -284,7 +284,7 @@ alias ls='lsd --group-dirs=first'
 
 # Functions
 function mkt(){
-	mkdir {nmap,content,exploits,scripts}
+	mkdir {nmap,content}
 }
 
 # Extract nmap information
