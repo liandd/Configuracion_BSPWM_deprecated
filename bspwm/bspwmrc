@@ -16,7 +16,7 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-feh --bg-fill /home/ydpak/Desktop/Images/--Fotos-wall/Walls/fot5.png
+feh --bg-fill /home/{usuario}/foto.png
 ~/.config/polybar/./launch.sh
 bspc config focus_follows_pointer true
 picom --experimental-backends &
