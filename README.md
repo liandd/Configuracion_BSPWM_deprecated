@@ -6,6 +6,43 @@ Todos los creditos a sus respectivos desarrolladores.
 Este entorno de trabajo solo sera de utilidad en una maquina Gnu/Linux con una distro basada en Debian,
 y esta centrada al uso de pentesting.
 
+
+Comandos :
+
+1. Abrir terminal
+   - super + enter
+
+2. Preselectores
+   - ctrl + super + alt + {Izquierda, Arriba, Derecha, Abajo}
+
+3. Preselectores numericos
+   - ctrl + super + {1, 2, 3, 4, 5}
+
+4. Tilling Window
+   - super + s
+
+5. Mover tilling window
+   - ctrl + super + {Izquierda, Arriba, Derecha, Abajo}
+   
+6. Cambiar tamano tilling window
+   - super + alt + {Izquierda, Arriba, Derecha, Abajo}
+
+7. Encasillar tilling window
+   - super + t
+
+8. Nueva terminal kitty
+   - ctrl + shift + enter
+
+9. Cerrar terminal
+   - ctrl + shift + w
+
+10. Multiventanas
+   - ctrl + shift + t
+
+11. Cambiar nombre
+   - ctrl + alt + shift + t
+
+
 La guia de instalacion sera la siguiente:
 
 1. Instalamos los siguientes paquetes:
