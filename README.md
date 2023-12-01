@@ -1,24 +1,3 @@
----
-layout: single
-title: "Archivos de Configuracion Bspwm"
-excerpt: "El proyecto de mi entorno de Bspwm es una configuración personalizada y optimizada para el gestor de ventanas bspwm en sistemas basados en Debian. Está diseñado específicamente para pentesting y proporciona un entorno de trabajo eficiente y altamente personalizable para realizar tareas relacionadas con la seguridad informática. Con una configuración de atajos de teclado optimizados, esta es mi configuración que brinda un flujo de trabajo rápido y productivo, ayudándote a organizar y controlar tus ventanas de manera eficiente mientras llevas a cabo actividades de pentesting en tu máquina con Linux."
-date: 2023-07-16
-classes: wide
-header:
-  teaser: /assets/images/Dotfiles-en-bspwm/fondo.png
-  teaser_home_page: true
-categories:
-  - Dotfiles
-  - Utilidades
-tags:
-  - Bpwm
-  - Polybar
-  - Bash
-  - PowerLevel10k
-  - Sxhkd
-  - Dotfiles
----
-
 ## Configuración personal de entorno de trabajo bspwm.
 
 <div style="text-align: center;">
