@@ -1,8 +1,7 @@
 ## Configuración personal de entorno de trabajo bspwm.
 
-<div style="text-align: center;">
-  <img src="/assets/images/Dotfiles-en-bspwm/fondo.png" alt="bof" width="2000" oncontextmenu="return false;">
-</div>
+![fondo](https://github.com/liandd/Configuracion_BSPWM/assets/114973749/a90d2ba6-b0ba-4881-a2fb-e391a39f2189)
+
 
 
 Este es mi entorno de trabajo personalizado con Bspwm para máquinas con sistema operativo GNU/Linux y distribuciones basadas en Debian. Está enfocado en el pentesting y tiene una configuración con atajos de teclado.
