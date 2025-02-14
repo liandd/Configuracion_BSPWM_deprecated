@@ -1,4 +1,4 @@
-## Configuración personal de entorno de trabajo bspwm.
+## Configuración personal de entorno de trabajo bspwm (DEPRECATED).
 
 ![fondo](https://github.com/liandd/Configuracion_BSPWM/assets/114973749/a90d2ba6-b0ba-4881-a2fb-e391a39f2189)
 
